@@ -59,7 +59,7 @@ CloudShellで操作（※MacとWinの環境差異を吸収したいため）
 - DBのREGION
 
 ```
-export REGION=''
+export REGION='ap-northeast-1'
 ```
 
 - DBクラスターのARN
