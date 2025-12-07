@@ -1,0 +1,17 @@
+{
+  "name": "vector-search-aurora",
+  "version": "1.0.0",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@aws-sdk/client-rds-data": "^3.943.0",
+    "dotenv": "^17.2.3",
+    "openai": "^6.10.0"
+  }
+}
