@@ -42,6 +42,10 @@
   - なし
 - VPC セキュリティグループ (ファイアウォール)
   - 新規作成
+- 新しい VPC セキュリティグループ名
+  - aozoara-match-sg
+- アベイラビリティーゾーン
+  - 指定なし
 - RDS Data API
   - RDS Data API の有効化
   - ポスグレのドライバーのインストールをハンズオンでスキップしたかった
@@ -55,7 +59,7 @@ CloudShellで操作（※MacとWinの環境差異を吸収したいため）
 - DBのREGION
 
 ```
-export REGION='ap-northeast-1'
+export REGION=''
 ```
 
 - DBクラスターのARN
