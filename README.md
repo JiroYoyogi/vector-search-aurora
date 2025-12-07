@@ -79,7 +79,7 @@ export SECRET_ARN='arn:aws:secretsmanager:ap-northeast-1:1234567890121:secret:rd
 - DB名
 
 ```
-export DB_NAME='aozora-match'
+export DB_NAME='aozora_match'
 
 ```
 
@@ -103,7 +103,7 @@ aws rds-data execute-statement \
 
 ### DBを作成
 
-DB名：`aozora-match`
+DB名：`aozora_match`
 
 ```
 aws rds-data execute-statement \
