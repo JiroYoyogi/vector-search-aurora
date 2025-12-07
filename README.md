@@ -25,7 +25,7 @@ export DB_CLUSTER_ARN='arn:aws:rds:ap-northeast-1:123456789012:cluster:example'
 
 - Secret ManagerのARN（パスワード管理）
 
-ARNに!が含まれてる点に注意
+※ ARNに!が含まれてる点に注意
 
 ```
 export SECRET_ARN='arn:aws:secretsmanager:ap-northeast-1:1234567890121:secret:rds!cluster-1234-5678-9012-3456'
@@ -48,7 +48,7 @@ echo $DB_NAME
 
 ### 現在あるDBを確認
 
-DBをホストするOSの中にDBを建てるイメージ
+クラスターの中にあるDBを確認
 
 ```
 aws rds-data execute-statement \
