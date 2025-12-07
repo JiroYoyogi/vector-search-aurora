@@ -1,4 +1,3 @@
-
 # Auroraのセットアップ
 
 - DBクラスター作成（DBをホストする環境・箱みたいなもの）
@@ -6,6 +5,48 @@
 - テーブル作成
 
 ## DBクラスター作成
+
+### エンジンのオプション
+
+- エンジンのオプション:
+  - Aurora(PostgreSQL Compatible)
+
+### テンプレート
+
+- テンプレート: 
+  - 開発/テスト
+
+### 設定
+
+- DB クラスター識別子:
+  - aozora-match
+- 認証情報管理:
+  - AWS Secrets Manager で管理 - 最も安全
+
+### インスタンスの設定
+
+- DB インスタンスクラス:
+  - Serverless v2
+- 最小キャパシティ（ACU）
+  - 0.5
+- 最大キャパシティ（ACU）
+  - 128
+
+### 接続
+
+- Virtual Private Cloud (VPC)
+  - 新しい VPC の作成
+- DB サブネットグループ
+  - 新しい DB サブネットグループの作成
+- パブリックアクセス
+  - なし
+- VPC セキュリティグループ (ファイアウォール)
+  - 新規作成
+- RDS Data API
+  - RDS Data API の有効化
+  - ポスグレのドライバーのインストールをハンズオンでスキップしたかった
+
+## DB作成
 
 CloudShellで操作（※MacとWinの環境差異を吸収したいため）
 
@@ -43,8 +84,6 @@ export DB_NAME='aozora-match'
 ```
 echo $DB_NAME
 ```
-
-## DB作成
 
 ### 現在あるDBを確認
 
