@@ -29,7 +29,7 @@ const rds = new RDSDataClient({
 
     // a. 自分でEmbeddingを作成する場合
     // const queryEmbedding = await getQueryVector(
-    //   "心がふわりと弾むような、ときめく恋の物語に触れたい"
+    //   "元気を貰いたい"
     // );
 
     // b. 作成済みのEmbeddingを使う場合
